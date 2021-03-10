@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    <input type="number" id="num1">
+    <input type="number" id="num2">
+
+    <select>
+
+        <option value="somar" onselect="Somar()">Somar</option>
+        <option value="subtrair" onselect="Subtrair()">Subtrair</option>
+        <option value="multiplicar" onselect="Multiplicar()">Multiplicar</option>
+        <option value="dividir" onselect="Dividir()">Dividir</option>
+
+    </select>
+
+    <input type="button" value="calcular" onclick="calcular()">
+
+    <div id="res"></div>
+
+    <script>
+        function calculara(){
+            function Somar(){
+            let numbe1 = document.querySelector('input#num1')
+            let numbe2 = document.querySelector('input#num2')
+            let res = document.querySelector('div#res')
+            let n1 = Number(mumbe1.value)
+            let n2 = Number(numbe2.value)
+            let add = n1 + n2
+        }
+
+        function Subtrair(){
+            let numbe1 = document.querySelector('input#num1')
+            let numbe2 = document.querySelector('input#num2')
+            let res = document.querySelector('div#res')
+            let n1 = Number(mumbe1.value)
+            let n2 = Number(numbe2.value)
+            let sub = n1 - n2
+        }
+
+        function Multiplicar(){
+            let numbe1 = document.querySelector('input#num1')
+            let numbe2 = document.querySelector('input#num2')
+            let res = document.querySelector('div#res')
+            let n1 = Number(mumbe1.value)
+            let n2 = Number(numbe2.value)
+            let multi = n1 * n2
+        }
+
+        function Dividir(){
+            let numbe1 = document.querySelector('input#num1')
+            let numbe2 = document.querySelector('input#num2')
+            let res = document.querySelector('div#res')
+            let n1 = Number(mumbe1.value)
+            let n2 = Number(numbe2.value)
+            let divi = n1 / n2
+        }
+        
+        }
+       
+        if(n1 + n2) {
+            document.write(`A soma de ${n1} e ${n2} é ${add}`)
+        } else if(n1 - n2) {
+            document.write(`A subtração entre ${n1} e ${n2} é ${sub}`)
+        } else if(n1 * n2) {
+            document.write(`A multiplicação entre ${n1} e ${n2} é ${multi}`)
+        } else if(n1 / n2) {
+            document.write(`A divisão ente ${n1} e ${n2} é ${divi}`)
+        } else {
+            document.write('Error')
+        }
+    </script>
+    
+</body>
+</html>
